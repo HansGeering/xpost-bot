@@ -9,6 +9,7 @@ bot_name=xpost-bot
 bot_version=0.1
 bot_author=HansGeering
 user_agent=script:%(bot_name)s:v%(bot_version)s (by /u/%(bot_author)s)
+debug=0
 
 #bot needs to be moderator in all the monitored subreddits
 #make SURE that the capitals in the subreddit names are spelled as on Reddit
