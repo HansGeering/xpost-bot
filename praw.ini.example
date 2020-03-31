@@ -1,5 +1,22 @@
 [bot]
+#make sure to add your own client_id and secret here, as you can't use these
+#see OAuth section at https://www.reddit.com/r/RequestABot/comments/cyll80/a_comprehensive_guide_to_running_your_reddit_bot/
 client_id=Ac5wlSTep5M8PQ
 client_secret=_FaKNOjWH4fSHD222AtSnWVyJ84
 password=[password]
 username=unusual-glass
+bot_name=xpost-bot
+bot_version=0.1
+bot_author=HansGeering
+user_agent=script:%(bot_name)s:v%(bot_version)s (by /u/%(bot_author)s)
+
+#bot needs to be moderator in all the monitored subreddits
+#make SURE that the capitals in the subreddit names are spelled as on Reddit
+monitor_subreddits=AskReddit,Coffee
+restricted_origins=itookapicture,photography
+
+#make sure that all new lines start with a tab, and that the whole message is within quotes: "like so". If you need to use quotes inside the message, use single quote: 'these'
+subject_to_user=Your post has been removed
+message_to_user="Hi u/{user},
+	Your post has been deleted from r/{subreddit} because you crossposted it and you were not the original author.
+	Please don't do this again."

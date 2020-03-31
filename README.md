@@ -1,2 +1,5 @@
-### Required modules
-- praw
+### Requirements
+```
+- python3
+- praw python module
+```
